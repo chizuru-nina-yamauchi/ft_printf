@@ -1,21 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_num_in_hexa_upper.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyamauch <cyamauch@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 17:51:18 by cyamauch          #+#    #+#             */
-/*   Updated: 2024/12/04 17:52:33 by cyamauch         ###   ########.fr       */
+/*   Created: 2024/12/04 18:43:05 by cyamauch          #+#    #+#             */
+/*   Updated: 2024/12/04 18:43:06 by cyamauch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-#include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
 
-int		ft_printf(const char *, ...);
-
-#endif
