@@ -15,19 +15,35 @@
 int	ft_print_pointer(void *ptr)
 {
 	int	len;
-	unsigned long	address;
 
 	len = 0;
-	address = (unsigned long)ptr;
 	len += ft_putstr("0x");
 	
-	if (address == 0)
+	if (ptr == NULL)
 	{
 		len += ft_putchar('0');
 	}
 	else
 	{
-		len += ft_putnbr_hex(address, "0123456789abcdef");
+		len += ft_printptr_addr((uintptr_t)ptr, 'x');
 	}
+	return (len);
+}
+
+int	ft_printptr_addr(uintptr_t n, const char format)
+{
+	int		len;
+	char	ref;
+
+	len = 0;
+	ref = 'a';
+	if (format == 'X')
+		ref = 'A';
+	if (n >= 16)
+		len += ft_printptr_addr(n / 16, format);
+	if (n % 16 < 10)
+		len += ft_putchar('0' + (n % 16));
+	else
+		len += ft_putchar(ref + (n % 16) - 10);
 	return (len);
 }

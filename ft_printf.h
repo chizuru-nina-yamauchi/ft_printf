@@ -16,6 +16,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
+#include <stdint.h>
 
 int		ft_printf(const char *format, ...);
 int		ft_putchar(int c);
@@ -23,6 +24,7 @@ int		ft_putstr(char *str);
 int		ft_putnbr(int n);
 int		ft_putnbr_hex(unsigned int n, const char *base);
 int		ft_print_pointer(void *ptr);
+int		ft_printptr_addr(uintptr_t n, const char format);
 int		ft_putnbr_unsigned(unsigned int n);
 
 #endif
