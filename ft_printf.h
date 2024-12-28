@@ -15,7 +15,14 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <limits.h>
 
-int		ft_printf(const char *, ...);
+int		ft_printf(const char *format, ...);
+int		ft_putchar(int c);
+int		ft_putstr(char *str);
+int		ft_putnbr(int n);
+int		ft_putnbr_hex(unsigned int n, const char *base);
+int		ft_print_pointer(void *ptr);
+int		ft_putnbr_unsigned(unsigned int n);
 
 #endif
