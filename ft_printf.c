@@ -39,8 +39,8 @@ static int	handle_format(char specifier, va_list args)
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
-	int	i;
-	int	total_len;
+	int		i;
+	int		total_len;
 
 	i = 0;
 	total_len = 0;
@@ -61,4 +61,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (total_len);
 }
-

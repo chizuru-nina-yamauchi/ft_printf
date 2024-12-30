@@ -21,10 +21,10 @@ int	ft_putnbr(int n)
 		return (ft_putstr("-2147483648"));
 	if (n < 0)
 	{
-		len +=ft_putchar('-');
+		len += ft_putchar('-');
 		n = -n;
 	}
-	if (n >=10)
+	if (n >= 10)
 	{
 		len += ft_putnbr(n / 10);
 	}

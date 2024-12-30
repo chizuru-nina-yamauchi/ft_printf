@@ -12,11 +12,11 @@
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-#include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <limits.h>
-#include <stdint.h>
+# include <stdarg.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <limits.h>
+# include <stdint.h>
 
 int		ft_printf(const char *format, ...);
 int		ft_putchar(int c);

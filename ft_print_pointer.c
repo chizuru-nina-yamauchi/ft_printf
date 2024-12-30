@@ -17,14 +17,13 @@ int	ft_print_pointer(void *ptr)
 	int	len;
 
 	len = 0;
-	len += ft_putstr("0x");
-	
-	if (ptr == NULL)
+	if (!ptr)
 	{
-		len += ft_putchar('0');
+		len += ft_putstr("(nil)");
 	}
 	else
 	{
+		len += ft_putstr("0x");
 		len += ft_printptr_addr((uintptr_t)ptr, 'x');
 	}
 	return (len);

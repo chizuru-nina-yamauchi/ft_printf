@@ -51,11 +51,13 @@ int	main()
 	ft_printf("Percentage: %%\n");
 	printf("Percentage: %%\n");
 
+	/*
 	// Edge case 10: Print large negative number
 	long long large_negative = -9223372036854775807;
 	ft_printf("Large negative: %lld\n", large_negative);
 	printf("Large negative: %lld\n", large_negative);
-
+	*/
+	
 	// Edge case 11: Print unsigned with 0 as the value
 	unsigned int zero_unsigned = 0;
 	ft_printf("Unsigned zero: %u\n", zero_unsigned);
